@@ -98,6 +98,8 @@
  * 1 | 1 |   1
  */
 
+import java.util.ArrayList;
+
 /**
  * 1. Compuerta AND y Operador AND (&&)
  * Compuerta AND: Produce una salida alta (1) sólo si todas sus entradas son altas (1).
@@ -119,8 +121,28 @@
 public class OperadoresRelacionales {
 
     public static void main(String ... args) {
-        boolean a = true ^ false;
 
-        System.out.println(a);
+//        byte: 8 bits, valores de -128 a 127.
+//        short: 16 bits, valores de -32,768 a 32,767.
+//        int: 32 bits, valores de -2^31 a 2^31-1.
+//        long: 64 bits, valores de -2^63 a 2^63-1.
+
+//        float
+//        Tamaño: 32 bits (4 bytes).
+//                Precisión: Precisión simple.
+//        Sufijo: Debe ir seguido por una f o F para indicar que es un valor de tipo float.
+
+//        double
+//        Tamaño: 64 bits (8 bytes).
+//                Precisión: Precisión doble.
+//        Sufijo: Aunque no es obligatorio, a menudo se usa d o D.
+
+        Integer nomina = 5;
+        int c = 5;
+        String b = "g";
+
+        System.out.println(Double.valueOf(b));
+
+
     }
 }

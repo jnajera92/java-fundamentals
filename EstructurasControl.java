@@ -24,7 +24,7 @@
  *  si (esto se cumple) {
  *      entonces has esto
  *  } de lo contrario {
- *      has esto
+ *      has esto otro
  *  }
  *
  *  Switch-Case
@@ -81,9 +81,47 @@ public class EstructurasControl {
 
     public static void main (String ... args) {
 
-        boolean a = false;
-        a |= false;
 
+        double monina = 80000;
+        int tope = 60000;
+        if (!( monina <= tope && monina > 0)) {
+            System.out.println("cinco es iguasl a 5 ");
+        } else if( monina < 0) {
+            System.out.println("juan le debes al banco");
+        } else {
+            System.out.println("tu dinero supera al tope del banco");
+        }
+        String mes = "febrero";
+
+        //Switch
+        switch (mes){
+            case "Enero":
+            case "febrero":
+                System.out.println("este otro mes: "+mes);
+                break;
+            default:
+                System.out.println("no tengo caso para ese mes: "+mes);
+        }
+
+        String[] meses = {"Enero", "Febrero", "Marzo"};
+
+        for(int c = 0; c < meses.length; c++) {
+            System.out.println(meses[c]);
+
+        }
+
+        int contador = 7;
+
+        while (contador < 9) {
+            System.out.println("el contador actual es " + contador);
+            contador ++;
+        }
+
+        do {
+            System.out.println("el contador actual" + contador);
+        } while (contador < 9);
+
+        boolean a = false;
         System.out.println(a);
     }
 }

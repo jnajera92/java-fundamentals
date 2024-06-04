@@ -14,6 +14,18 @@ public class OperadoresBit {
 
     public static void main (String ... args) {
 
+//        8 | 4 | 2 |1
+//                    0 = 0
+//                    1 = 1
+//                1  0  = 2
+//                1  1 = 3
+//            1   0  0  = 4
+//            1   0  1  = 5
+//        1   1   0  0 =  12
+//        1   1   1  0 = 14
+//        1   1   0  0 = 12
 
+        int a = 12 | 14;
+        System.out.println(a);
     }
 }
